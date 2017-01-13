@@ -1,0 +1,6 @@
+C:\Users\wuln-a\Desktop\QRCode\QRCode\bin\QRCode.dll
+C:\Users\wuln-a\Desktop\QRCode\QRCode\bin\QRCode.pdb
+C:\Users\wuln-a\Desktop\QRCode\QRCode\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\wuln-a\Desktop\QRCode\QRCode\obj\Debug\QRCode.dll
+C:\Users\wuln-a\Desktop\QRCode\QRCode\obj\Debug\QRCode.pdb
+C:\Users\wuln-a\Desktop\QRCode\QRCode\bin\ThoughtWorks.QRCode.dll

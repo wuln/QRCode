@@ -1,0 +1,6 @@
+C:\Users\wuln-a\Desktop\makeQrcode\makeQrcode\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\wuln-a\Desktop\makeQrcode\makeQrcode\bin\makeQrcode.dll
+C:\Users\wuln-a\Desktop\makeQrcode\makeQrcode\bin\makeQrcode.pdb
+C:\Users\wuln-a\Desktop\makeQrcode\makeQrcode\bin\ThoughtWorks.QRCode.dll
+C:\Users\wuln-a\Desktop\makeQrcode\makeQrcode\obj\Debug\makeQrcode.dll
+C:\Users\wuln-a\Desktop\makeQrcode\makeQrcode\obj\Debug\makeQrcode.pdb

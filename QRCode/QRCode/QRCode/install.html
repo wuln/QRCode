@@ -1,0 +1,181 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />
+    <title>下载</title>
+    <style type="text/css">
+        body
+        {
+            margin: 0;
+            padding: 0;
+            color: #333333;
+            font-family: "微软雅黑";
+            background: #f0f0f0;
+        }
+        .clear
+        {
+            clear: both;
+        }
+        .fs_16
+        {
+            font-size: 16px;
+        }
+        .fs_20
+        {
+            font-size: 20px;
+        }
+        .fc_gray
+        {
+            color: #555;
+        }
+        .layout
+        {
+            width: 100%;
+            background: #3d3f40;
+            border-bottom: 1px solid #cccccc;
+        }
+        .layout .logo
+        {
+            max-width: 960px;
+            height: 86px;
+            margin: 0 auto;
+            background: url(../images/plat_logo.png) 10px center no-repeat;
+        }
+        .center
+        {
+            background: #ffffff;
+            border-top: 1px solid #222222;
+        }
+        .center .con
+        {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 40px 0;
+        }
+        .btn
+        {
+            width: 30%;
+            margin-left: 10px;
+            min-width: 296px;
+            float: left;
+            padding: 5px 5px;
+            text-align: center;
+        }
+        .exp
+        {
+            display: block;
+            height: 24px;
+            line-height: 24px;
+            text-align: left;
+            margin-left: 10px;
+            font-size: 14px;
+        }
+        .exp a
+        {
+            color: #ff6600;
+        }
+        .btn a.ios
+        {
+            height: 200px;
+            display: block;
+            background: #4691dc url(../images/ios.png) center center no-repeat;
+            margin: 0 auto;
+        }
+        .btn a.android
+        {
+            height: 200px;
+            display: block;
+            background: #a4c63e url(../images/android.png) center center no-repeat;
+            margin: 0 auto;
+        }
+        .title
+        {
+            margin-left: 10px;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        .ps
+        {
+            margin-left: 4em;
+            word-wrap: break-word;
+            word-break: break-all;
+        }
+        .footer
+        {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px 0;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="layout">
+        <div class="logo">
+        </div>
+        <div class="center">
+            <div class="con">
+                <div class="title fs_20">
+                    产品下载</div>
+                <div class="exp">
+                    iOS需安装 <a href="#" target="_blank">预置描述文件(iOS8.0以上无需安装)</a></div>
+                <div class="btn">
+                    <a id="iphoneLink" href="#" class="ios"></a>
+                </div>
+                <div class="btn">
+                    <a href="#" class="android"></a>
+                </div>
+                <div class="btn">
+                    <img id="QrCodeImg" alt="" src="" />
+                </div>
+                <div class="clear">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer fc_gray fs_12">
+        <div class="title fs_20">
+            配置说明</div>
+        <div class="ps fs_16">
+            <p id="hostname">
+            </p>
+            <p id="port">
+            </p>
+        </div>
+    </div>
+    <script type="text/javascript">
+        //        function _ajaxSyncCall(urlStr) {
+        //            try {
+        //                var obj = new XMLHttpRequest(); //仅用于ios
+        //                obj.open('GET', urlStr, false);
+        //                obj.send();
+        //                if (obj.status == 200)
+        //                    return obj.responseText;
+        //                else return null;
+        //            } catch (e) {
+        //                return null;
+        //            }
+        //        }
+        //        function _getPlistPath() {
+        //            var page = _ajaxSyncCall("plistPath.txt");
+        //            if (!page)
+        //                return;
+        //            page = page + "/QRCode.plist.do";
+        //            var dPath = location.protocol + "%2F%2F" + location.host;
+
+        //            var url = page + "%3Fs%3D" + dPath;
+        //            document.getElementById("iphoneLink").href = "itms-services://?action=download-manifest&url=" + url;
+        //        }
+
+        var hostname = location.hostname;
+        var port = location.port;
+        var page = "http://" + hostname + ":" + port + "/QRCode/install.html";
+
+        document.getElementById("hostname").innerHTML = "服务器地址：" + hostname;
+        document.getElementById("port").innerHTML = "端口地址：" + port;
+        document.getElementById("QrCodeImg").src = "qrcodeImg.ashx?CodeText=" + page;
+        //        setTimeout(_getPlistPath, 10);
+    </script>
+</body>
+</html>
